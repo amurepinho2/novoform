@@ -64,10 +64,8 @@ input[type="range"] {
     margin-bottom: 20px;
 }
 
-.slider-labels {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 5px;
+.description p {
+    margin: 5px 0;
     font-size: 0.9em;
     color: #666;
 }
