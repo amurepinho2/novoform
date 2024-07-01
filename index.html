@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Análise de Startups - Fase 5</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <form action="submit_form.php" method="post">
+        <!-- Pontuação por Macro Áreas -->
+        <fieldset>
+            <legend>Pontuação por Macro Áreas</legend>
+
+            <!-- Tecnologia -->
+            <fieldset>
+                <legend>Tecnologia</legend>
+                <label for="tecnologia_proprietaria">Uso de tecnologia proprietária?</label>
+                <select id="tecnologia_proprietaria" name="tecnologia_proprietaria" required>
+                    <option value="Sim">Sim</option>
+                    <option value="Não">Não</option>
+                </select>
+
+                <label for="num_patentes">Número de patentes registradas</label>
+                <input type="number" id="num_patentes" name="num_patentes" required>
+
+                <label for="infraestrutura_tecnologica">Avaliação da infraestrutura tecnológica</label>
+                <p>Por favor, avalie a infraestrutura tecnológica da sua empresa em uma escala de 1 a 5:</p>
+                <input type="range" id="infraestrutura_tecnologica" name="infraestrutura_tecnologica" min="1" max="5" required>
+                <div class="range-labels">
+                    <span>1</span><span>2</span><span>3</span><span>4</span><span>5</span>
+                </div>
+
+                <label for="inovacao_produto">Nível de inovação no produto</label>
+                <p>Por favor, avalie o nível de inovação no produto da sua empresa em uma escala de 1 a 5:</p>
+                <input type="range" id="inovacao_produto" name="inovacao_produto" min="1" max="5" required>
+                <div class="range-labels">
+                    <span>1</span><span>2</span><span>3</span><span>4</span><span>5</span>
+                </div>
+
+                <label for="seguranca_conformidade">Avaliação de segurança e conformidade</label>
+                <p>Por favor, avalie o nível de segurança e conformidade da sua empresa em uma escala de 1 a 5:</p>
+                <input type="range" id="seguranca_conformidade" name="seguranca_conformidade" min="1" max="5" required>
+                <div class="range-labels">
+                    <span>1</span><span>2</span><span>3</span><span>4</span><span>5</span>
+                </div>
+            </fieldset>
+
+            <!-- Pessoas -->
+            <fieldset>
+                <legend>Pessoas</legend>
+                <label for="experiencia_founders">Experiência dos fundadores</label>
+                <p>Por favor, avalie a experiência dos fundadores da sua empresa em uma escala de 1 a 5:</p>
+                <input type="range" id="experiencia_founders" name="experiencia_founders" min="1" max="5" required>
+                <div class="range-labels">
+                    <span>1</span><span>2</span><span>3</span><span>4</span><span>5</span>
+                </div>
+
+                <label for="qualificacao_equipe">Qualificação da equipe</label>
+                <p>Por favor, avalie a qualificação da equipe da sua empresa em uma escala de 1 a 5:</p>
+                <input type="range" id="qualificacao_equipe" name="qualificacao_equipe" min="1" max="5" required>
+                <div class="range-labels">
+                    <span>1</span><span>2</span><span>3</span><span>4</span><span>5</span>
+                </div>
+
+                <label for="engajamento_retenção">Engajamento e retenção de talentos</label>
+                <p>Por favor, avalie o engajamento e a retenção de talentos na sua empresa em uma escala de 1 a 5:</p>
+                <input type="range" id="engajamento_retenção" name="engajamento_retenção" min="1" max="5" required>
+                <div class="range-labels">
+                    <span>1</span><span>2</span><span>3</span><span>4</span><span>5</span>
+                </div>
+
+                <label for="diversidade_inclusao">Diversidade e inclusão</label>
+                <p>Por favor, avalie o nível de diversidade e inclusão na sua empresa em uma escala de 1 a 5:</p>
+                <input type="range" id="diversidade_inclusao" name="diversidade_inclusao" min="1" max="5" required>
+                <div class="range-labels">
+                    <span>1</span><span>2</span><span>3</span><span>4</span><span>5</span>
+                </div>
+            </fieldset>
+
+            <!-- Gestão -->
+            <fieldset>
+                <legend>Gestão</legend>
+                <label for="visao_metas">Clareza na visão e metas</label>
+                <p>Por favor, avalie a clareza na visão e nas metas da sua empresa em uma escala de 1 a 5:</p>
+                <input type="range" id="visao_metas" name="visao_metas" min="1" max="5" required>
+                <div class="range-labels">
+                    <span>1</span><span>2</span><span>3</span><span>4</span><span>5</span>
+                </div>
+
+                <label for="estrutura_organizacional">Estrutura organizacional</label>
+                <p>Por favor, avalie a estrutura organizacional da sua empresa em uma escala de 1 a 5:</p>
+                <input type="range" id="estrutura_organizacional" name="estrutura_organizacional" min="1" max="5" required>
+                <div class="range-labels">
+                    <span>1</span><span>2</span><span>3</span><span>4</span><span>5</span>
+                </div>
+
+                <label for="planejamento_estrategico">Planejamento estratégico</label>
+                <p>Por favor, avalie o planejamento estratégico da sua empresa em uma escala de 1 a 5:</p>
+                <input type="range" id="planejamento_estrategico" name="planejamento_estrategico" min="1" max="5" required>
+                <div class="range-labels">
+                    <span>1</span><span>2</span><span>3</span><span>4</span><span>5</span>
+                </div>
+
+                <label for="eficiencia_operacional">Eficiência operacional</label>
+                <p>Por favor, avalie a eficiência operacional da sua empresa em uma escala de 1 a 5:</p>
+                <input type="range" id="eficiencia_operacional" name="eficiencia_operacional" min="1" max="5" required>
+                <div class="range-labels">
+                    <span>1</span><span>2</span><span>3</span><span>4</span><span>5</span>
+                </div>
+            </fieldset>
+
+            <!-- Produto -->
+            <fieldset>
+                <legend>Produto</legend>
+                <label for="proposta_valor_clara">Proposta de valor clara</label>
+                <p>Por favor, avalie a clareza da proposta de valor do seu produto em uma escala de 1 a 5:</p>
+                <input type="range" id="proposta_valor_clara" name="proposta_valor_clara" min="1" max="5" required>
+                <div class="range-labels">
+                    <span>1</span><span>2</span><span>3</span><span>4</span><span>5</span>
+                </div>
+
+                <label for="diferenciacao_mercado">Diferenciação no mercado</label>
+                <p>Por favor, avalie a diferenciação do seu produto no mercado em uma escala de 1 a 5:</p>
+                <input type="range" id="diferenciacao_mercado" name="diferenciacao_mercado" min="1" max="5" required>
+                <div class="range-labels">
+                    <span>1</span><span>2</span><span>3</span><span>4</span><span>5</span>
+                </div>
+
+                <label for="roadmap_desenvolvimento">Roadmap de desenvolvimento</label>
+                <p>Por favor, avalie o roadmap de desenvolvimento do seu produto em uma escala de 1 a 5:</p>
+                <input type="range" id="roadmap_desenvolvimento" name="roadmap_desenvolvimento" min="1" max="5" required>
+                <div class="range-labels">
+                    <span>1</span><span>2</span><span>3</span><span>4</span><span>5</span>
+                </div>
+
+                <label for="feedback_usuarios">Feedback dos usuários</label>
+                <p>Por favor, avalie o feedback dos usuários sobre o seu produto em uma escala de 1 a 5:</p>
+                <input type="range" id="feedback_usuarios" name="feedback_usuarios" min="1" max="5" required>
+                <div class="range-labels">
+                    <span>1</span><span>2</span><span>3</span><span>4</span><span>5</span>
+                </div>
+            </fieldset>
+
+            <!-- Marketing -->
+            <fieldset>
+                <legend>Marketing</legend>
+                <label for="estrategia_marketing">Estratégia de marketing</label>
+                <p>Por favor, avalie a estratégia de marketing da sua empresa em uma escala de 1 a 5:</p>
+                <input type="range" id="estrategia_marketing" name="estrategia_marketing" min="1" max="5" required>
+                <div class="range-labels">
+                    <span>1</span><span>2</span><span>3</span><span>4</span><span>5</span>
+                </div>
+
+                <label for="presenca_redes_sociais">Presença nas redes sociais</label>
+                <p>Por favor, avalie a presença da sua empresa nas redes sociais em uma escala de 1 a 5:</p>
+                <input type="range" id="presenca_redes_sociais" name="presenca_redes_sociais" min="1" max="5" required>
+                <div class="range-labels">
+                    <span>1</span><span>2</span><span>3</span><span>4</span><span>5</span>
+                </div>
+
+                <label for="aquisicao_clientes">Aquisição de clientes</label>
+                <p>Por favor, avalie a eficácia da aquisição de clientes pela sua empresa em uma escala de 1 a 5:</p>
+                <input type="range" id="aquisicao_clientes" name="aquisicao_clientes" min="1" max="5" required>
+                <div class="range-labels">
+                    <span>1</span><span>2</span><span>3</span><span>4</span><span>5</span>
+                </div>
+
+                <label for="brand_awareness">Brand awareness</label>
+                <p>Por favor, avalie o brand awareness da sua empresa em uma escala de 1 a 5:</p>
+                <input type="range" id="brand_awareness" name="brand_awareness" min="1" max="5" required>
+                <div class="range-labels">
+                    <span>1</span><span>2</span><span>3</span><span>4</span><span>5</span>
+                </div>
+            </fieldset>
+
+            <!-- Vendas -->
+            <fieldset>
+                <legend>Vendas</legend>
+                <label for="modelo_vendas">Modelo de vendas</label>
+                <p>Por favor, avalie o modelo de vendas da sua empresa em uma escala de 1 a 5:</p>
+                <input type="range" id="modelo_vendas" name="modelo_vendas" min="1" max="5" required>
+                <div class="range-labels">
+                    <span>1</span><span>2</span><span>3</span><span>4</span><span>5</span>
+                </div>
+
+                <label for="taxa_conversao">Taxa de conversão</label>
+                <p>Por favor, avalie a taxa de conversão das vendas da sua empresa em uma escala de 1 a 5:</p>
+                <input type="range" id="taxa_conversao" name="taxa_conversao" min="1" max="5" required>
+                <div class="range-labels">
+                    <span>1</span><span>2</span><span>3</span><span>4</span><span>5</span>
+                </div>
+
+                <label for="crescimento_clientes">Crescimento da base de clientes</label>
+                <p>Por favor, avalie o crescimento da base de clientes da sua empresa em uma escala de 1 a 5:</p>
+                <input type="range" id="crescimento_clientes" name="crescimento_clientes" min="1" max="5" required>
+                <div class="range-labels">
+                    <span>1</span><span>2</span><span>3</span><span>4</span><span>5</span>
+                </div>
+
+                <label for="ciclo_vendas">Ciclo de vendas</label>
+                <p>Por favor, avalie o ciclo de vendas da sua empresa em uma escala de 1 a 5:</p>
+                <input type="range" id="ciclo_vendas" name="ciclo_vendas" min="1" max="5" required>
+                <div class="range-labels">
+                    <span>1</span><span>2</span><span>3</span><span>4</span><span>5</span>
+                </div>
+            </fieldset>
+
+            <!-- Finanças -->
+            <fieldset>
+                <legend>Finanças</legend>
+                <label for="receita_crescimento">Receita e crescimento</label>
+                <p>Por favor, avalie a receita e o crescimento da sua empresa em uma escala de 1 a 5:</p>
+                <input type="range" id="receita_crescimento" name="receita_crescimento" min="1" max="5" required>
+                <div class="range-labels">
+                    <span>1</span><span>2</span><span>3</span><span>4</span><span>5</span>
+                </div>
+
+                <label for="margem_lucro">Margem de lucro</label>
+                <p>Por favor, avalie a margem de lucro da sua empresa em uma escala de 1 a 5:</p>
+                <input type="range" id="margem_lucro" name="margem_lucro" min="1" max="5" required>
+                <div class="range-labels">
+                    <span>1</span><span>2</span><span>3</span><span>4</span><span>5</span>
+                </div>
+
+                <label for="gestao_caixa">Gestão de caixa</label>
+                <p>Por favor, avalie a gestão de caixa da sua empresa em uma escala de 1 a 5:</p>
+                <input type="range" id="gestao_caixa" name="gestao_caixa" min="1" max="5" required>
+                <div class="range-labels">
+                    <span>1</span><span>2</span><span>3</span><span>4</span><span>5</span>
+                </div>
+
+                <label for="sustentabilidade_financeira">Sustentabilidade financeira</label>
+                <p>Por favor, avalie a sustentabilidade financeira da sua empresa em uma escala de 1 a 5:</p>
+                <input type="range" id="sustentabilidade_financeira" name="sustentabilidade_financeira" min="1" max="5" required>
+                <div class="range-labels">
+                    <span>1</span><span>2</span><span>3</span><span>4</span><span>5</span>
+                </div>
+            </fieldset>
+
+            <!-- Jurídico -->
+            <fieldset>
+                <legend>Jurídico</legend>
+                <label for="conformidade_legal">Conformidade legal</label>
+                <p>Por favor, avalie a conformidade legal da sua empresa em uma escala de 1 a 5:</p>
+                <input type="range" id="conformidade_legal" name="conformidade_legal" min="1" max="5" required>
+                <div class="range-labels">
+                    <span>1</span><span>2</span><span>3</span><span>4</span><span>5</span>
+                </div>
+
+                <label for="propriedade_intelectual">Propriedade intelectual</label>
+                <p>Por favor, avalie a proteção de propriedade intelectual da sua empresa em uma escala de 1 a 5:</p>
+                <input type="range" id="propriedade_intelectual" name="propriedade_intelectual" min="1" max="5" required>
+                <div class="range-labels">
+                    <span>1</span><span>2</span><span>3</span><span>4</span><span>5</span>
+                </div>
+
+                <label for="contratos_acordos">Contratos e acordos</label>
+                <p>Por favor, avalie a gestão de contratos e acordos da sua empresa em uma escala de 1 a 5:</p>
+                <input type="range" id="contratos_acordos" name="contratos_acordos" min="1" max="5" required>
+                <div class="range-labels">
+                    <span>1</span><span>2</span><span>3</span><span>4</span><span>5</span>
+                </div>
+
+                <label for="riscos_legais">Riscos legais</label>
+                <p>Por favor, avalie os riscos legais da sua empresa em uma escala de 1 a 5:</p>
+                <input type="range" id="riscos_legais" name="riscos_legais" min="1" max="5" required>
+                <div class="range-labels">
+                    <span>1</span><span>2</span><span>3</span><span>4</span><span>5</span>
+                </div>
+            </fieldset>
+        </fieldset>
+
+        <input type="submit" value="Enviar">
+    </form>
+    <script src="js/scripts.js"></script>
+</body>
+</html>
